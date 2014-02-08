@@ -3,6 +3,9 @@ iris.screen(
         self.create = function () {   
             console.log("Home Screen Created");
             self.tmpl(iris.path.home.html);
+            self.screens("inner_home_container",[
+                ["inner_home",iris.path.inner_home.js]
+            ])
         };
         self.awake = function () {   
             console.log("Home Screen Awakened");
