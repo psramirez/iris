@@ -6,7 +6,8 @@ iris.path = {
     help: {js: "./screen/help.js", html: "./screen/help.html"},
     
     /*uis*/
-    my_ui: {js: "./ui/my_ui.js", html: "./ui/my_ui.html"}
+    my_ui: {js: "./ui/my_ui.js", html: "./ui/my_ui.html"},
+        inner_ui: {js: "./ui/inner_ui.js", html: "./ui/inner_ui.html"}
 };
 
 
