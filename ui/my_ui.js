@@ -10,6 +10,9 @@ iris.ui(
                 self.tmpl(iris.path.my_ui.html);
                 /*crear ui hijo automaticamente*/
                 self.ui("inner_ui_container", iris.path.inner_ui.js);
+                /*notificar al padre que se creo un ui*/
+                iris.notify("MY_UI_CREATED_event");                
+                 
                 self.on("text_changed", updateDiv);
                 
                 /*EVENTOS*/
