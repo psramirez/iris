@@ -5,6 +5,9 @@ iris.screen(
         self.create = function () {
             console.log("Welcome Screen Created");
             self.tmpl(iris.path.welcome.html);
+            self.screens("screens",[
+                ["home",iris.path.home.js]
+            ])
         };
 
         self.awake = function () {

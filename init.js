@@ -1,5 +1,6 @@
 iris.path = {
-    welcome: {js: "./screen/welcome.js", html: "./screen/welcome.html"}
+    welcome: {js: "./screen/welcome.js", html: "./screen/welcome.html"},
+    home: {js: "./screen/home.js", html: "./screen/home.html"}
 
 };
 
