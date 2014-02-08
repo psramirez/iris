@@ -6,6 +6,8 @@ iris.screen(
                 self.screens("inner_home_container", [
                     ["inner_home", iris.path.inner_home.js]
                 ])
+                /*crear ui automaticamente*/
+                 my_ui = self.ui("ui_container", iris.path.my_ui.js);
                 /*evento cargar ui*/
                 self.get("my_ui_loader").click(
                         function() {
