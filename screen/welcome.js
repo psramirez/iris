@@ -8,6 +8,10 @@ iris.screen(
             self.screens("screens",[
                 ["home",iris.path.home.js]
             ])
+            
+            self.get("navigate_home").click(function(){
+                iris.navigate("#/home");
+            })
         };
 
         self.awake = function () {
