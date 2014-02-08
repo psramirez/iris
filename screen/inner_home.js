@@ -5,11 +5,11 @@ iris.screen(
             console.log("Inner_home Screen Created");
         };
         self.awake = function () {   
-            console.log("Inner_home Screen Awakened");
+            console.log("Inner_home Screen Awakened");            
         };
 
         self.sleep = function () {
-            console.log("Inner_home Screen Asleep");
+            console.log("Inner_home Screen Asleep");            
         };
 
         self.destroy = function () {
