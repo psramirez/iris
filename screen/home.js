@@ -9,9 +9,25 @@ iris.screen(
                 /*evento cargar ui*/
                 self.get("my_ui_loader").click(
                         function() {
-                            self.ui("ui_container", iris.path.my_ui.js);
+                            my_ui = self.ui("ui_container", iris.path.my_ui.js);
                         }
-                );                
+                );
+                /*destruir ultimi ui*/
+                self.get("destroy_my_ui").click(
+                        function() {
+                            if (my_ui != null) {
+                                self.destroyUI(my_ui);
+                            }
+                        }
+                );
+                
+                /*destruir todos los uis*/
+                self.get("destroy_all_uis").click(
+                        function() {                  
+                                self.destroyUIs("ui_container");
+                            
+                        }
+                );
             };
             self.awake = function() {
                 console.log("Home Screen Awakened");
