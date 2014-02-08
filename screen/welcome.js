@@ -6,7 +6,8 @@ iris.screen(
             console.log("Welcome Screen Created");
             self.tmpl(iris.path.welcome.html);
             self.screens("screens",[
-                ["home",iris.path.home.js]
+                ["home",iris.path.home.js],
+                ["help",iris.path.help.js]
             ])
             
             self.get("navigate_home").click(function(){
